@@ -1,0 +1,75 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update contact & social links (WhatsApp numbers, Gmail, WhatsApp Channel, YouTube) across homepage, footer, floating button, and SEO schema",
+  "requirements": [
+    {
+      "id": "REQ-13",
+      "summary": "Update homepage Contact section to show both WhatsApp numbers, Gmail, and clickable WhatsApp/YouTube channel links with safe external-link handling.",
+      "acceptanceCriteria": [
+        "On the homepage Contact section, users can see and click both WhatsApp numbers (as tel: and/or wa.me links) and the Gmail address (mailto: link).",
+        "The WhatsApp Channel and YouTube Channel are visible and clickable in the Contact section.",
+        "The WhatsApp Channel and YouTube Channel links open in a new tab and include rel=\"noopener noreferrer\"."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/constants/contact.ts",
+          "operation": "create",
+          "description": "Centralize contact/social constants (WhatsApp numbers 9435212145 and 9126026463, Gmail nathcybercafe9@gmail.com, WhatsApp Channel URL, YouTube Channel URL, and derived wa.me links) to keep Contact section, footer, floating button, and SEO schema consistent."
+        },
+        {
+          "path": "frontend/src/components/site/ContactSection.tsx",
+          "operation": "modify",
+          "description": "Update the static contact info block to display: both phone numbers as tel: links (tel:9435212145 and tel:9126026463) with readable formatting (e.g., show “91260 26463”), Gmail as a mailto:nathcybercafe9@gmail.com link, plus WhatsApp Channel and YouTube Channel links that open in a new tab with rel=\"noopener noreferrer\". Prefer importing values from frontend/src/constants/contact.ts."
+        }
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "summary": "Update Site footer social links and Contact subsection with new YouTube/WhatsApp channel URLs and both WhatsApp numbers + Gmail, using safe external-link handling.",
+      "acceptanceCriteria": [
+        "Footer social icon/links include YouTube and WhatsApp Channel URLs provided by the user.",
+        "Footer Contact area shows both WhatsApp numbers and the Gmail address with correct link schemes (tel:/wa.me/mailto:).",
+        "All external footer links open in a new tab and include rel=\"noopener noreferrer\"."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/site/SiteFooter.tsx",
+          "operation": "modify",
+          "description": "Update footer social links area to include YouTube Channel and WhatsApp Channel links (target=\"_blank\" + rel=\"noopener noreferrer\"), and update the Contact subsection to include both WhatsApp numbers (tel: and/or wa.me links) and Gmail (mailto:). Prefer importing values from frontend/src/constants/contact.ts."
+        }
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "summary": "Ensure the floating WhatsApp button targets one of the provided WhatsApp numbers (default to 9435212145) and remains consistent with displayed contact info, opening safely in a new tab.",
+      "acceptanceCriteria": [
+        "The floating WhatsApp button opens a wa.me chat to a number that is listed on the site (9435212145 or 91260 26463).",
+        "The floating WhatsApp button link opens in a new tab with rel=\"noopener noreferrer\" and still includes the prefilled message text."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/site/WhatsAppFloatingButton.tsx",
+          "operation": "modify",
+          "description": "Set the floating button destination to the preferred default WhatsApp number (9435212145) using the wa.me format, ensure it matches the number displayed elsewhere, and keep target=\"_blank\" + rel=\"noopener noreferrer\" and the prefilled message text. Prefer importing values from frontend/src/constants/contact.ts."
+        }
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "summary": "Update LocalBusiness JSON-LD in the Seo component to include both phone numbers and the new YouTube/WhatsApp channel URLs as social profile links.",
+      "acceptanceCriteria": [
+        "The rendered JSON-LD LocalBusiness schema includes both phone numbers (9435212145 and 91260 26463) in a valid way.",
+        "The schema includes the YouTube and WhatsApp channel URLs as social profile links (e.g., sameAs array).",
+        "No console errors are produced due to invalid JSON-LD formatting."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/seo/Seo.tsx",
+          "operation": "modify",
+          "description": "Update the injected LocalBusiness JSON-LD to include both phone numbers (use a valid multi-value representation, such as an array), and add the YouTube Channel and WhatsApp Channel URLs to sameAs. Prefer importing values from frontend/src/constants/contact.ts and ensure JSON.stringify output remains valid to avoid console errors."
+        }
+      ]
+    }
+  ]
+}

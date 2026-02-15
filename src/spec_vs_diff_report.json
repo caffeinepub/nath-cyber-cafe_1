@@ -1,0 +1,54 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-15T09:44:38.644Z",
+  "summary": "Most requested updates are implemented via a new centralized CONTACT constants file and updates to SEO JSON-LD, footer social/contact links, and the floating WhatsApp button. However, due to truncation of ContactSection and part of the footer email block, the diff summary does not provide sufficient evidence that the homepage Contact section (and footer email) fully meet the specified link/visibility/safety requirements.",
+  "missing_requirements": [
+    {
+      "id": "REQ-13",
+      "requirement": "Update the Contact section to display both WhatsApp phone numbers, the Gmail address, and add clickable WhatsApp Channel + YouTube Channel links, with safe external link handling (target _blank + rel) and tel:/mailto: schemes.",
+      "reason": "The modified ContactSection.tsx content is truncated before showing the actual rendered contact information/links. The diff summary does not show the WhatsApp numbers rendered as links, the mailto: link, nor the WhatsApp/YouTube channel links with target/rel attributes in the Contact section UI.",
+      "evidence": [
+        "frontend/src/components/site/ContactSection.tsx (truncated)"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "requirement": "Update the Site footer Contact subsection to include both WhatsApp numbers and the Gmail address with correct link schemes (tel:/wa.me/mailto:) and safe external link handling.",
+      "reason": "Footer shows tel: links for both numbers and wa.me links with target/rel, but the email link block is truncated before confirming the mailto: href and whether any required attributes are present/unchanged. Therefore the diff summary is insufficient to verify the Gmail/mailto requirement end-to-end.",
+      "evidence": [
+        "frontend/src/components/site/SiteFooter.tsx (truncated)"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Added centralized CONTACT constants module (including location field) to drive multiple components.",
+      "reason": "The BuildRequest only asks for content/link updates; centralizing constants and adding a location constant are implementation choices not explicitly requested.",
+      "evidence": [
+        "frontend/src/constants/contact.ts",
+        "frontend/src/components/seo/Seo.tsx",
+        "frontend/src/components/site/SiteFooter.tsx",
+        "frontend/src/components/site/WhatsAppFloatingButton.tsx",
+        "frontend/src/components/site/ContactSection.tsx (truncated)"
+      ]
+    },
+    {
+      "description": "Footer includes/retains generic social links to Facebook, Instagram, and X (twitter.com) in addition to the requested YouTube and WhatsApp Channel links.",
+      "reason": "REQ-14 only requires adding YouTube and WhatsApp Channel links in the footer social area; additional social destinations are not mentioned in the request.",
+      "evidence": [
+        "frontend/src/components/site/SiteFooter.tsx (truncated)"
+      ]
+    }
+  ],
+  "confidence": 0.64,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/seo/Seo.tsx",
+    "frontend/src/components/site/ContactSection.tsx",
+    "frontend/src/components/site/SiteFooter.tsx",
+    "frontend/src/components/site/WhatsAppFloatingButton.tsx",
+    "frontend/src/constants/contact.ts",
+    "project_state.json"
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Build a modern, responsive business website for Nath Cyber Cafe with services showcase, portfolio, testimonials, contact/SEO, plus an integrated mini government jobs portal and secure admin dashboard; also includes requested payments, email/job alerts, and bonus features per the original prompt.",
+  "architectural_notes": [
+    "Requested tech stack includes HTML/CSS/JS (React optional) frontend; backend Node.js/PHP/Python; DB MySQL/MongoDB; SSL hosting; plus cron-based daily job auto-update, payments, and SMTP email integration."
+  ],
+  "known_issues": [
+    "Platform constraint risk: requested backend (Node/PHP/Python), SMTP email, cron jobs, and some payment options may not be supported in the target build environment; scope may require adaptation."
+  ],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-fully-responsive-public-facing-website-for-nath-cyber-cafe-using-the-provided-branding-clean-corporate-minimal-layout-royal-blue-0a3d91-cyan-00c2ff-white-theme-modern-sans-serif-typography-poppins-inter-montserrat-card-based-ui-smooth-scroll-animations-sticky-navigation-bar-whatsapp-floating-chat-button-professional-iconography-mobile-first-responsive-design-and-fast-loading-seo-friendly-semantic-structure",
+      "title": "Create a fully responsive public-facing website for “Nath Cyber Cafe” using the provided branding: clean corporate minimal layout, Royal Blue (#0A3D91), Cyan (#00C2FF), White theme; modern sans-serif typography (Poppins/Inter/Montserrat); card-based UI; smooth scroll animations; sticky navigation bar; WhatsApp floating chat button; professional iconography; mobile-first responsive design; and fast-loading, SEO-friendly semantic structure.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-homepage-with-the-specified-hero-content-and-ctas-headline-professional-graphic-design-academic-support-government-job-updates-subheading-complete-digital-documentation-services-under-one-roof-and-cta-buttons-for-explore-services-latest-government-jobs-and-contact-via-whatsapp",
+      "title": "Implement the Homepage with the specified hero content and CTAs: Headline “Professional Graphic Design, Academic Support & Government Job Updates”, subheading “Complete Digital & Documentation Services Under One Roof”, and CTA buttons for “Explore Services”, “Latest Government Jobs”, and “Contact via WhatsApp”.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-services-module-with-three-sections-a-graphic-design-services-cards-for-logo-design-resume-cv-design-visiting-card-design-banner-poster-design-social-media-post-design-invitation-card-design-flex-print-design-passport-photo-editing-b-school-project-solutions-with-the-listed-services-and-tagline-and-c-college-assignment-support-with-the-listed-items-and-description-each-service-card-must-include-an-icon-short-professional-description-a-starting-price-placeholder-and-an-order-now-action-that-routes-to-whatsapp-or-a-supported-payment-page-if-later-enabled",
+      "title": "Build the Services module with three sections: (A) Graphic Design Services (cards for Logo Design, Resume/CV Design, Visiting Card Design, Banner & Poster Design, Social Media Post Design, Invitation Card Design, Flex & Print Design, Passport Photo Editing), (B) School Project Solutions (with the listed services and tagline), and (C) College Assignment Support (with the listed items and description). Each service card must include an icon, short professional description, a starting price placeholder, and an “Order Now” action that routes to WhatsApp (or a supported payment page if later enabled).",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-dedicated-page-titled-latest-government-jobs-apply-online-with-categories-central-government-state-government-ssc-railway-banking-defence-teaching-upsc-and-job-cards-showing-job-title-organization-name-total-vacancies-qualification-last-date-location-official-apply-link-and-a-pdf-notification-download-button-include-search-job-title-qualification-category-filter-dropdown-load-more-and-a-visible-last-updated-timestamp-enforce-secure-external-linking-for-official-apply-links-open-in-new-tab-safe-rel-attributes-and-show-clear-error-empty-states",
+      "title": "Create a dedicated page titled “Latest Government Jobs – Apply Online” with categories (Central Government, State Government, SSC, Railway, Banking, Defence, Teaching, UPSC) and job cards showing: Job Title, Organization Name, Total Vacancies, Qualification, Last Date, Location, Official Apply Link, and a PDF Notification download button. Include search (job title/qualification), category filter dropdown, “Load More”, and a visible “Last Updated” timestamp. Enforce secure external linking for official apply links (open in new tab, safe rel attributes) and show clear error/empty states.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-admin-dashboard-protected-by-internet-identity-authentication-provide-role-gating-so-only-authorized-admin-principals-can-access-admin-routes-and-mutate-data-include-admin-ui-for-1-add-edit-delete-job-posts-2-upload-replace-remove-pdf-notifications-for-jobs-3-enable-disable-job-categories-4-update-service-pricing-placeholders-5-manage-testimonials-add-edit-delete-6-view-contact-form-submissions-7-manage-blog-posts-create-edit-publish-unpublish-delete",
+      "title": "Create an Admin Dashboard protected by Internet Identity authentication. Provide role-gating so only authorized admin principals can access admin routes and mutate data. Include admin UI for: (1) Add/Edit/Delete job posts, (2) Upload/replace/remove PDF notifications for jobs, (3) Enable/disable job categories, (4) Update service pricing placeholders, (5) Manage testimonials (add/edit/delete), (6) View contact form submissions, (7) Manage blog posts (create/edit/publish/unpublish/delete).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-portfolio-and-testimonials-sections-to-the-public-site-portfolio-must-include-graphic-design-samples-resume-examples-project-previews-and-a-before-after-comparison-layout-testimonials-must-include-student-reviews-a-5-star-rating-ui-and-a-carousel-display",
+      "title": "Add Portfolio and Testimonials sections to the public site. Portfolio must include: graphic design samples, resume examples, project previews, and a before/after comparison layout. Testimonials must include student reviews, a 5-star rating UI, and a carousel display.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-contact-footer-area-with-business-name-nath-cyber-cafe-phone-number-9435212145-whatsapp-chat-entry-point-a-contact-form-name-phone-message-that-stores-submissions-in-the-backend-a-google-map-embed-area-social-media-icons-and-the-disclaimer-text-this-website-provides-information-and-official-links-for-government-jobs-we-are-not-a-government-organization",
+      "title": "Implement the Contact & Footer area with: business name “Nath Cyber Cafe”, phone number 9435212145, WhatsApp chat entry point, a contact form (Name, Phone, Message) that stores submissions in the backend, a Google Map embed area, social media icons, and the disclaimer text: “This website provides information and official links for government jobs. We are not a government organization.”",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-seo-and-site-metadata-features-per-page-meta-title-and-description-semantic-headings-landmarks-structured-schema-markup-location-focused-keywords-content-and-provide-sitemap-xml-and-robots-txt-as-static-assets",
+      "title": "Implement SEO and site metadata features: per-page meta title and description, semantic headings/landmarks, structured schema markup, location-focused keywords content, and provide sitemap.xml and robots.txt as static assets.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-blog-section-with-a-public-listing-and-post-detail-view-admin-can-create-edit-posts-publish-unpublish-them-and-delete-them-public-blog-should-show-only-published-posts",
+      "title": "Create a Blog section with a public listing and post detail view. Admin can create/edit posts, publish/unpublish them, and delete them. Public blog should show only published posts.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-performance-conscious-ui-behavior-optimized-assets-reasonable-component-level-code-splitting-where-applicable-and-smooth-scroll-animations-without-degrading-responsiveness-targeting-fast-perceived-load-on-mobile-devices",
+      "title": "Implement performance-conscious UI behavior: optimized assets, reasonable component-level code splitting (where applicable), and smooth scroll animations without degrading responsiveness, targeting fast perceived load on mobile devices.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-visible-note-and-safeguards-around-external-job-links-clearly-label-apply-links-as-external-ensure-they-open-in-a-new-tab-with-safe-rel-attributes-and-add-minimal-validation-in-the-admin-form-to-discourage-non-official-domains-while-still-allowing-admin-override-if-needed",
+      "title": "Add a visible note and safeguards around external job links: clearly label Apply links as external, ensure they open in a new tab with safe rel attributes, and add minimal validation in the admin form to discourage non-official domains (while still allowing admin override if needed).",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-contact-section-to-display-both-whatsapp-phone-numbers-9435212145-and-91260-26463-the-gmail-address-nathcybercafe9-gmail-com-and-add-a-clickable-whatsapp-channel-link-https-whatsapp-com-channel-0029vbcnxlqb4hdxkkizqv27-and-youtube-channel-link-https-youtube-com-nathcybercafe-f6q-si-y-ehbtenw1pt5q-i-all-links-must-open-safely-external-links-in-a-new-tab-with-rel-noopener-noreferrer-and-phone-email-links-must-use-tel-and-mailto",
+      "title": "Update the Contact section to display both WhatsApp phone numbers (9435212145 and 91260 26463), the Gmail address (nathcybercafe9@gmail.com), and add a clickable WhatsApp Channel link (https://whatsapp.com/channel/0029VbCNXlqB4hdXKKIzqv27) and YouTube Channel link (https://youtube.com/@nathcybercafe-f6q?si=Y_ehbTeNW1Pt5Q_i). All links must open safely (external links in a new tab with rel=\"noopener noreferrer\") and phone/email links must use tel: and mailto:.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-site-footer-to-include-the-new-youtube-channel-link-and-whatsapp-channel-link-in-the-social-links-area-and-update-the-contact-subsection-to-include-both-whatsapp-numbers-9435212145-and-91260-26463-and-the-gmail-address-nathcybercafe9-gmail-com-ensure-external-links-open-in-a-new-tab-with-rel-noopener-noreferrer-and-email-phone-use-mailto-tel",
+      "title": "Update the Site footer to include the new YouTube channel link and WhatsApp channel link in the social links area, and update the Contact subsection to include both WhatsApp numbers (9435212145 and 91260 26463) and the Gmail address (nathcybercafe9@gmail.com). Ensure external links open in a new tab with rel=\"noopener noreferrer\" and email/phone use mailto:/tel:.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-floating-whatsapp-button-behavior-to-use-one-of-the-provided-whatsapp-numbers-as-its-destination-and-ensure-the-destination-number-is-consistent-with-the-site-s-displayed-whatsapp-contact-information-preferably-defaulting-to-9435212145-unless-a-different-default-is-explicitly-configured",
+      "title": "Update the floating WhatsApp button behavior to use one of the provided WhatsApp numbers as its destination and ensure the destination number is consistent with the site’s displayed WhatsApp contact information (preferably defaulting to 9435212145 unless a different default is explicitly configured).",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-localbusiness-json-ld-seo-schema-to-reflect-the-updated-contact-and-social-details-by-including-both-phone-numbers-and-adding-the-provided-youtube-and-whatsapp-channel-urls-in-schema-fields-appropriate-for-social-profiles-e-g-sameas",
+      "title": "Update the LocalBusiness JSON-LD SEO schema to reflect the updated contact and social details by including both phone numbers and adding the provided YouTube and WhatsApp channel URLs in schema fields appropriate for social profiles (e.g., sameAs).",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Public-facing Nath Cyber Cafe website with branding/design system (royal blue/cyan/white, modern typography, card UI, animations, sticky nav, WhatsApp button, mobile-first, fast/SEO-friendly)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Services module for Graphic Design, School Project Solutions, and College Assignment Support (service cards with icons, descriptions, starting price placeholders, and Order Now actions)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Dedicated 'Latest Government Jobs – Apply Online' portal page with job cards, search/filter, load more, last-updated timestamp, official link redirect rules, and PDF download",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Admin dashboard with secure authentication and management for jobs (CRUD), PDFs, service pricing, testimonials, contact submissions, blog posts, email notifications, and category toggles",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Local SEO optimization (meta per page, schema markup, Google Business integration, location keywords, sitemap.xml, robots.txt, Core Web Vitals)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Portfolio section (design samples, resume examples, project previews, before/after comparisons)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Testimonials section with 5-star UI and carousel display",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Contact & footer features: contact form, Google Map embed, WhatsApp, social icons, disclaimer about government jobs links",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Payment integration (Razorpay, UPI, Stripe) with checkout, confirmation, success/failure pages, and secure handling",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Email system: job alert subscriptions, order confirmations, admin notifications, daily automated job update emails via SMTP",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Implement a Motoko backend data model and API to support: job categories (including enable/disable), job posts (with all fields required by the job card), and optional PDF notification storage/retrieval. Ensure that “Apply Link” values are stored and returned as provided and that the frontend can enforce the rule that apply links should point only to official government websites.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Add/Update contact & social details across the site: include YouTube channel link, WhatsApp channel link, WhatsApp numbers (9435212145 and 91260 26463), and Gmail ID (nathcybercafe9@gmail.com) in the contact/footer and relevant social icons/links",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Nath Cyber Cafe",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

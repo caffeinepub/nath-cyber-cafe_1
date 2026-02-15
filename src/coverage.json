@@ -1,0 +1,77 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-15T09:44:38.647Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 4,
+    "implemented": 4,
+    "items": [
+      {
+        "id": "REQ-13",
+        "summary": "Update the Contact section to display both WhatsApp phone numbers (9435212145 and 91260 26463), the Gmail address (nathcybercafe9@gmail.com), and add a clickable WhatsApp Channel link (https://whatsapp.com/channel/0029VbCNXlqB4hdXKKIzqv27) and YouTube Channel link (https://youtube.com/@nathcybercafe-f6q?si=Y_ehbTeNW1Pt5Q_i). All links must open safely (external links in a new tab with rel=\"noopener noreferrer\") and phone/email links must use tel: and mailto:.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/constants/contact.ts",
+          "frontend/src/components/site/ContactSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/constants/contact.ts",
+          "frontend/src/components/site/ContactSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-14",
+        "summary": "Update the Site footer to include the new YouTube channel link and WhatsApp channel link in the social links area, and update the Contact subsection to include both WhatsApp numbers (9435212145 and 91260 26463) and the Gmail address (nathcybercafe9@gmail.com). Ensure external links open in a new tab with rel=\"noopener noreferrer\" and email/phone use mailto:/tel:.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/site/SiteFooter.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/site/SiteFooter.tsx"
+        ]
+      },
+      {
+        "id": "REQ-15",
+        "summary": "Update the floating WhatsApp button behavior to use one of the provided WhatsApp numbers as its destination and ensure the destination number is consistent with the site’s displayed WhatsApp contact information (preferably defaulting to 9435212145 unless a different default is explicitly configured).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/site/WhatsAppFloatingButton.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/site/WhatsAppFloatingButton.tsx"
+        ]
+      },
+      {
+        "id": "REQ-16",
+        "summary": "Update the LocalBusiness JSON-LD SEO schema to reflect the updated contact and social details by including both phone numbers and adding the provided YouTube and WhatsApp channel URLs in schema fields appropriate for social profiles (e.g., sameAs).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/seo/Seo.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/seo/Seo.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/components/seo/Seo.tsx",
+    "frontend/src/components/site/ContactSection.tsx",
+    "frontend/src/components/site/SiteFooter.tsx",
+    "frontend/src/components/site/WhatsAppFloatingButton.tsx",
+    "frontend/src/constants/contact.ts",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

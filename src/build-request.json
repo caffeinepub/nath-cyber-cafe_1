@@ -1,0 +1,107 @@
+{
+  "kind": "build_request",
+  "title": "Add YouTube/WhatsApp channel links and update contact details (WhatsApp numbers + Gmail)",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-13",
+      "text": "Update the Contact section to display both WhatsApp phone numbers (9435212145 and 91260 26463), the Gmail address (nathcybercafe9@gmail.com), and add a clickable WhatsApp Channel link (https://whatsapp.com/channel/0029VbCNXlqB4hdXKKIzqv27) and YouTube Channel link (https://youtube.com/@nathcybercafe-f6q?si=Y_ehbTeNW1Pt5Q_i). All links must open safely (external links in a new tab with rel=\"noopener noreferrer\") and phone/email links must use tel: and mailto:.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-9"
+        ],
+        "quotes": [
+          "Add YouTube channel Link https://youtube.com/@nathcybercafe-f6q?si=Y_ehbTeNW1Pt5Q_i And Add WhatsApp channel Link https://whatsapp.com/channel/0029VbCNXlqB4hdXKKIzqv27 Add WhatsApp number 9435212145 & 91260 26463 Add Gmail I'd nathcybercafe9@gmail.com"
+        ]
+      },
+      "acceptanceCriteria": [
+        "On the homepage Contact section, users can see and click both WhatsApp numbers (as tel: and/or wa.me links) and the Gmail address (mailto: link).",
+        "The WhatsApp Channel and YouTube Channel are visible and clickable in the Contact section.",
+        "The WhatsApp Channel and YouTube Channel links open in a new tab and include rel=\"noopener noreferrer\"."
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Update the Site footer to include the new YouTube channel link and WhatsApp channel link in the social links area, and update the Contact subsection to include both WhatsApp numbers (9435212145 and 91260 26463) and the Gmail address (nathcybercafe9@gmail.com). Ensure external links open in a new tab with rel=\"noopener noreferrer\" and email/phone use mailto:/tel:.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-9"
+        ],
+        "quotes": [
+          "Add YouTube channel",
+          "And Add WhatsApp channel",
+          "Add WhatsApp number 9435212145 & 91260 26463",
+          "Add Gmail I'd nathcybercafe9@gmail.com"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer social icon/links include YouTube and WhatsApp Channel URLs provided by the user.",
+        "Footer Contact area shows both WhatsApp numbers and the Gmail address with correct link schemes (tel:/wa.me/mailto:).",
+        "All external footer links open in a new tab and include rel=\"noopener noreferrer\"."
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Update the floating WhatsApp button behavior to use one of the provided WhatsApp numbers as its destination and ensure the destination number is consistent with the site’s displayed WhatsApp contact information (preferably defaulting to 9435212145 unless a different default is explicitly configured).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-9"
+        ],
+        "quotes": [
+          "Add WhatsApp number 9435212145 & 91260 26463"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The floating WhatsApp button opens a wa.me chat to a number that is listed on the site (9435212145 or 91260 26463).",
+        "The floating WhatsApp button link opens in a new tab with rel=\"noopener noreferrer\" and still includes the prefilled message text."
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "Update the LocalBusiness JSON-LD SEO schema to reflect the updated contact and social details by including both phone numbers and adding the provided YouTube and WhatsApp channel URLs in schema fields appropriate for social profiles (e.g., sameAs).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-9"
+        ],
+        "quotes": [
+          "Add YouTube channel Link https://youtube.com/@nathcybercafe-f6q?si=Y_ehbTeNW1Pt5Q_i",
+          "And Add WhatsApp channel Link https://whatsapp.com/channel/0029VbCNXlqB4hdXKKIzqv27",
+          "Add WhatsApp number 9435212145 & 91260 26463"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The rendered JSON-LD LocalBusiness schema includes both phone numbers (9435212145 and 91260 26463) in a valid way.",
+        "The schema includes the YouTube and WhatsApp channel URLs as social profile links (e.g., sameAs array).",
+        "No console errors are produced due to invalid JSON-LD formatting."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit any files under frontend/src/components/ui or any frontend immutablePaths listed in SYSTEM_CONTEXT.",
+    "Keep the backend as-is; this change should be implemented purely via frontend content/link updates unless a backend change is strictly necessary (not expected).",
+    "Use English for any user-facing text added or changed."
+  ],
+  "nonGoals": [
+    "Adding new backend APIs or admin controls for contact/social links.",
+    "Integrating third-party social media APIs or embedding live YouTube/WhatsApp feeds.",
+    "Changing site branding, layout, or SEO strategy beyond updating the requested contact/social details."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

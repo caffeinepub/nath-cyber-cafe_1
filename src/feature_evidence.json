@@ -1,0 +1,86 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-contact-section-to-display-both-whatsapp-phone-numbers-9435212145-and-91260-26463-the-gmail-address-nathcybercafe9-gmail-com-and-add-a-clickable-whatsapp-channel-link-https-whatsapp-com-channel-0029vbcnxlqb4hdxkkizqv27-and-youtube-channel-link-https-youtube-com-nathcybercafe-f6q-si-y-ehbtenw1pt5q-i-all-links-must-open-safely-external-links-in-a-new-tab-with-rel-noopener-noreferrer-and-phone-email-links-must-use-tel-and-mailto",
+      "featureTitle": "Update the Contact section to display both WhatsApp phone numbers (9435212145 and 91260 26463), the Gmail address (nathcybercafe9@gmail.com), and add a clickable WhatsApp Channel link (https://whatsapp.com/channel/0029VbCNXlqB4hdXKKIzqv27) and YouTube Channel link (https://youtube.com/@nathcybercafe-f6q?si=Y_ehbTeNW1Pt5Q_i). All links must open safely (external links in a new tab with rel=\"noopener noreferrer\") and phone/email links must use tel: and mailto:.",
+      "files": [
+        "frontend/src/components/site/ContactSection.tsx",
+        "frontend/src/constants/contact.ts"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-site-footer-to-include-the-new-youtube-channel-link-and-whatsapp-channel-link-in-the-social-links-area-and-update-the-contact-subsection-to-include-both-whatsapp-numbers-9435212145-and-91260-26463-and-the-gmail-address-nathcybercafe9-gmail-com-ensure-external-links-open-in-a-new-tab-with-rel-noopener-noreferrer-and-email-phone-use-mailto-tel",
+      "featureTitle": "Update the Site footer to include the new YouTube channel link and WhatsApp channel link in the social links area, and update the Contact subsection to include both WhatsApp numbers (9435212145 and 91260 26463) and the Gmail address (nathcybercafe9@gmail.com). Ensure external links open in a new tab with rel=\"noopener noreferrer\" and email/phone use mailto:/tel:.",
+      "files": [
+        "frontend/src/components/site/SiteFooter.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-floating-whatsapp-button-behavior-to-use-one-of-the-provided-whatsapp-numbers-as-its-destination-and-ensure-the-destination-number-is-consistent-with-the-site-s-displayed-whatsapp-contact-information-preferably-defaulting-to-9435212145-unless-a-different-default-is-explicitly-configured",
+      "featureTitle": "Update the floating WhatsApp button behavior to use one of the provided WhatsApp numbers as its destination and ensure the destination number is consistent with the site’s displayed WhatsApp contact information (preferably defaulting to 9435212145 unless a different default is explicitly configured).",
+      "files": [
+        "frontend/src/components/site/WhatsAppFloatingButton.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-localbusiness-json-ld-seo-schema-to-reflect-the-updated-contact-and-social-details-by-including-both-phone-numbers-and-adding-the-provided-youtube-and-whatsapp-channel-urls-in-schema-fields-appropriate-for-social-profiles-e-g-sameas",
+      "featureTitle": "Update the LocalBusiness JSON-LD SEO schema to reflect the updated contact and social details by including both phone numbers and adding the provided YouTube and WhatsApp channel URLs in schema fields appropriate for social profiles (e.g., sameAs).",
+      "files": [
+        "frontend/src/components/seo/Seo.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-16"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

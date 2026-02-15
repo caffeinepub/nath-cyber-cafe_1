@@ -1,0 +1,11 @@
+{
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations including jobs, categories, service pricing, testimonials, contact forms, and blog posts with proper cache invalidation.",
+  "frontend/src/utils/officialDomainValidation.ts": "URL validation utility that checks if apply links use HTTPS and match official government domain patterns (.gov.in, .nic.in, etc.).",
+  "frontend/public/sitemap.xml": "XML sitemap for SEO containing main public routes (home, jobs, blog) with appropriate change frequencies and priorities.",
+  "frontend/public/robots.txt": "Robots.txt file allowing all crawlers and referencing the sitemap location.",
+  "frontend/src/constants/contact.ts": "Centralized constants file containing all contact information (WhatsApp numbers, Gmail, WhatsApp channel, YouTube channel) used across the application for consistency.",
+  "frontend/src/components/site/ContactSection.tsx": "Contact section component with form submission and comprehensive contact information display including both WhatsApp numbers, Gmail, WhatsApp channel, and YouTube channel with proper external link handling.",
+  "frontend/src/components/site/SiteFooter.tsx": "Site footer component displaying social media links (YouTube, WhatsApp channel, Facebook, Instagram, X), contact details (both phone numbers, WhatsApp links, Gmail), disclaimer, and attribution with proper external link handling.",
+  "frontend/src/components/site/WhatsAppFloatingButton.tsx": "Floating WhatsApp button component using the primary WhatsApp number from centralized constants with proper external link handling.",
+  "frontend/src/components/seo/Seo.tsx": "SEO component managing page metadata and JSON-LD LocalBusiness schema including both phone numbers, email, and social profile links (YouTube and WhatsApp channels)."
+}
